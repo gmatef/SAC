@@ -16,7 +16,7 @@ class CreateUsersTable extends Migration {
             $table->increments('id')->unsigned();
             $table->string('user', 45)->unique();
             $table->string('email', 64)->unique();
-            $table->string('password', 16);
+            $table->string('password');
             $table->integer('fkPerson')->unsigned();
             $table->integer('fkPermission')->unsigned();
             $table->rememberToken();
