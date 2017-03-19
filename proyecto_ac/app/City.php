@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class City extends Model {
 
     protected $table = 'cities';
-    protected $fillable = ['City', 'zipCode', 'fkProvince'];
+    protected $fillable = ['city', 'zipCode', 'fkProvince'];
 
     public function provinces() {
         return $this->belongsTo('App\Province');
